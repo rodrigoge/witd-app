@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.login-container{
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos img{
+    width: 140px;
+}
+
+.login-container section.form{
+    width: 100%;
+    max-width: 500px;
+    transition: 0.4s;
+}
+
+.login-container section.form h1{
+    margin-bottom: 20px;
+    text-align: center;
+    animation: move 1600ms;
+    animation-delay: 150ms;
+    animation-fill-mode: backwards;
+}
+
+.login-container section.form div#divCrm{
+    position: relative;
+    animation: move 1600ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+}
+
+
+.login-container section.form div#divPassword{
+    position: relative;
+    animation: move 1600ms;
+    animation-delay: 560ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes move{
+    from {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.login-container section.form div .icon{
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 18px;
+}
+
+.login-container section.form input{
+    margin: 4px 0;
+}
+
+.login-container section.form button{
+    margin-top: 3px;
+    border-radius: 3px;
+    animation: move 1600ms;
+    animation-delay: 870ms;
+    animation-fill-mode: backwards;
+}
+
+.login-container section.form .link{
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    animation: move 1600ms;
+    animation-delay: 1180ms;
+    animation-fill-mode: backwards;
+}
+
+@media(max-width: 1050px){
+    .login-container section.form{
+        width: 40%;
+    }
+}
